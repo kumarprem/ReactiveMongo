@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.citi.sample</groupId>
+	<artifactId>reactivemongo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Hermes Distribution Repository</name>
+			<url>http://swdclinx2.nam.nsroot.net:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://10.96.150.50:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>releases</id>
+			<name>Hermes Distribution Repository</name>
+			<url>http://swdclinx2.nam.nsroot.net:8081/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>nexus</id>
+			<name>Hermes Distribution Repository</name>
+			<url>http://10.96.150.50:8081/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+
+
+	<properties>
+		<rxjava-reactive-streams.version>1.2.0</rxjava-reactive-streams.version>
+	</properties>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-stream_2.12</artifactId>
+			<version>2.5.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-reactivestreams</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+	</dependencies>
+
+
+
+</project>
